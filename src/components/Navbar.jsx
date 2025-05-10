@@ -166,7 +166,7 @@ import NavLinks from "./NavLinks";
 import { useEffect, useState } from "react";
 
 const themes = {
-  cupcake: "cupcake",
+  emerald: "emerald",
   forest: "forest",
 };
 
@@ -178,8 +178,8 @@ const Navbar = () => {
   const [theme, setTheme] = useState(getThemeFromLocalStorage());
 
   const handleTheme = () => {
-    const { cupcake, forest } = themes;
-    const newTheme = theme === cupcake ? forest : cupcake;
+    const { emerald, forest } = themes;
+    const newTheme = theme === emerald ? forest : emerald;
     setTheme(newTheme);
   };
 
